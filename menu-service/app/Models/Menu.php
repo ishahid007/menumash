@@ -16,4 +16,16 @@ class Menu extends Model
      * @var array<string>
      */
     protected $fillable = ['name', 'price', 'type'];
+
+    /**
+     * The attributes that should be cast.
+     *
+     * @var array<string, string>
+     */
+    protected function casts(): array
+    {
+        return [
+            'price' => 'decimal:2',
+        ];
+    }
 }
