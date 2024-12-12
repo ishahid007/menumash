@@ -1,3 +1,7 @@
-### Get Menu
-GET http://localhost:8003/api/menu
+## Set base URL
+@base_url = http://localhost:8003
+
+### Get All Menu Items
+GET {{base_url}}/api/menu
 Accept: application/json
+
